@@ -1,0 +1,194 @@
+.backform {
+        background-color: var(--white-color1);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        width: 528px;
+        height: 581px;
+        position: relative;
+        opacity: 0;
+        padding-left: 41px;
+        padding-right: 39px;
+        transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 2s,
+        transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &.is-hidden {
+        opacity: 1;
+        }
+
+        &__title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.17em;
+        padding: 38.5px 0 12px 0;
+        }
+        &__name {
+        padding-top: 10px;
+        padding-bottom: 4px;
+        text-align: left;
+        }
+
+        &__input {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        display: block;
+        height: 40px;
+        margin-top: 4px;
+        outline: none;
+        margin-bottom: 10px;
+        padding-left: 40px;
+        width: 100%;
+        }
+
+        &__comments {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        display: block;
+        height: 120px;
+        margin: 4px 0 20px 0;
+        padding: 12px 0 0 16px;
+        outline: none;
+        width: 100%;
+        }
+
+        &__input:hover,
+        &__comments:focus,
+        &__input:focus {
+        border: 1px solid #2196f3;
+        }
+
+        & &__comments:hover {
+        border: 1px solid #2196f3;
+        }
+
+        &__input:hover + &__icon,
+        &__input:hover + &__icon,
+        &__input:focus + &__icon,
+        &__input:focus + &__icon {
+        fill: #2196f3;
+        }
+
+        &__containersvg {
+        position: relative;
+        }
+
+        &__icon {
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        }
+
+        &__checktext {
+        margin-left: 16px;
+        padding-bottom: 5px;
+        position: relative;
+        }
+
+        &__checkbox {
+        width: 15px;
+        height: 16px;
+        z-index: 10;
+        }
+
+        &__checkicon {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+
+        &__checkbox:checked {
+            appearance: none;
+            border: #000;
+        }
+        
+        &__checkbox:checked ~ &__checkicon {
+            display: inline;
+            fill: #2196f3;
+        }
+        
+        &__checktext:hover &__checkicon {
+          display: none;
+        }
+
+        &__checkbox::before {
+        content: "";
+        color: #fff;
+        background-color: #2196f3;
+        border-radius: 2px;
+        display: block;
+        width: 15px;
+        height: 16px;
+        visibility: hidden
+        }
+        
+        &__checktext:hover &__checkbox::before {
+        visibility: visible;
+        }
+
+        &__policy {
+        display: inline-block;
+        color: #757575;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71em;
+        letter-spacing: 0.03em;
+        padding-bottom: 4px;
+        position: absolute;
+        left: 19px;
+        top: -4px;
+        }
+
+        &__senderbutton {
+        border: none;
+        border-radius: 4px;
+        background-color: var(--blue-color1);
+        display: block;
+        color: var(--white-color1);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.875em;
+        padding: 10px 75px;
+        text-align: center;
+        margin: 20px auto ;
+        }
+    }
+
+
+@media screen and (max-width: 1198px) {
+    .backform {
+        width: 480px;
+        height: 480px;
+ &__comments {
+        height: 10vh;
+        width: 100%;
+        }
+
+         &__title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.17em;
+        padding: 18.5px 0 5px 0;
+        }
+    
+
+     &__input {
+     
+        width: 100%;
+        }
+    
+ &__senderbutton {
+        padding: 5px 75px;
+       
+        }
+    
+    }
+}
+
+      

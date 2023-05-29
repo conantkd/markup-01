@@ -1,0 +1,23 @@
+.adress {
+    &__office {
+    color: var(--white-color1);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.71em;
+    
+    }
+
+    &__links {
+    color: var(--grey-color1);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.71em;
+    }
+
+    &__links:focus,
+    &__links:hover {
+    color: var(--blue-color1);
+    }
+}

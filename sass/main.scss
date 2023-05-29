@@ -1,0 +1,87 @@
+@import "./utils/variables";
+@import "./components/socials";
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/booking";
+@import "./components/hero";
+@import "./components/values";
+@import "./components/services";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/backdrop";
+@import "./components/backform";
+@import "./components/footer";
+@import "./components/adress";
+@import "./components/filter";
+@import "./components/projects";
+@import "./utils/mixings";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  box-sizing: content-box;
+  color: var(--black-color1);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.list {
+  font-style: normal;
+  list-style: none;
+}
+
+/*anchor deffaults*/
+a {
+  text-decoration: none;
+}
+
+/* Icon deffaults*/
+.icon {
+  fill: var(--grey-color2);
+}
+
+.logo {
+  color: var(--blue-color1);
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.19em;
+  padding-top: 24px;
+  padding-bottom: 6px;
+}
+
+.logo--bottom {
+    padding: 0;
+    }
+ /* titles on sections  */
+.titles {
+  color: var(--black-color1);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14em;
+  text-align: center;
+  text-transform: capitalize;
+  }
+
+@media screen and (max-width: 1199px) {
+    .container {
+  width:  unset;
+}
+}
+
+
