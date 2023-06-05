@@ -34,3 +34,10 @@
       color: var(--blue-color1);
     }
 }
+
+@media (max-width: 767px) {
+  .navbar {
+    &__menu {
+    display: none;
+  }}
+}

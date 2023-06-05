@@ -35,24 +35,42 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+
+@media (min-width: 481px) and (max-width: 1199px ){
   .cards {
-    margin: 0 auto;
-    display: flex;
+  margin: auto 0;
     flex-wrap: wrap;
-    max-width: 570px;
-    justify-content: center;
+    justify-content: space-around;
 &__box {
-      max-width: 270px;
+      max-width: 354px;
     }
 
     &__title {
-     max-width: 270px;
+     max-width: 354px;
     }
 
     &__text {
-    max-width: 270px;
+    max-width: 354px;
     }
-    
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px ){
+  .cards {
+    align-items: center;
+  margin: auto 0;
+    flex-wrap: wrap;
+    justify-content: center ;
+&__box {
+      max-width: 450px;
+    }
+
+    &__title {
+     max-width: 450px;
+    }
+
+    &__text {
+    max-width: 450px;
+    }
   }
 }

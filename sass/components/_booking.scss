@@ -1,7 +1,7 @@
 .booking {
     display: flex;
     gap: 30px;
-    padding:32px 0px 32px 270px;
+    padding:32px 0px 32px auto;
     flex-wrap: nowrap;
   
     &__link {
@@ -24,4 +24,22 @@
     &__link:hover .icon {
     fill: var(--blue-color1);
     }
+}
+
+@media (min-width: 768px) and (max-width: 1199px ) {
+  .booking {
+    padding-top:21px;
+    padding-left: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+}
+
+
+@media (max-width: 767px) {
+  .booking {
+    display: none;
+  }
 }

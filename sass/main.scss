@@ -1,3 +1,4 @@
+@import "./utils/mixings";
 @import "./utils/variables";
 @import "./components/socials";
 @import "./components/header";
@@ -14,7 +15,7 @@
 @import "./components/adress";
 @import "./components/filter";
 @import "./components/projects";
-@import "./utils/mixings";
+@import "./components/mobilemenu";
 
 * {
   padding: 0;
@@ -33,7 +34,6 @@ body {
 .container {
   margin: 0 auto;
   padding-left: 15px;
-  padding-right: 15px;
   width: 1200px;
 }
 
