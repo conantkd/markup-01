@@ -1,6 +1,7 @@
 .team{
   background-color: var(--white-color2);
   padding-top: 94px;
+  margin-top: 60px;
     .members {
     display: flex;
     gap: 30px;
@@ -12,6 +13,7 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         }
+       
         &__names {
         color: var(--black-color1);
         font-size: 16px;
@@ -38,12 +40,35 @@
 
 
 @media screen and (max-width: 1199px) {
+  .team{
   .members {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+  }
   }
 }
 
+@media screen (min-width:360) and (max-width: 767.9) {
+  .team{
+  .members {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 50%
+    justify-content: center;
+  }
+  }
+}
+
+@media screen (min-width:768) and (max-width: 1199.9px) {
+  .members {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 50%
+    justify-content: center;
+
+  }
+}

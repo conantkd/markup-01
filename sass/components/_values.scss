@@ -39,7 +39,8 @@
   }
 }
 @media (max-width: 479.8px) {
-.cards {
+.values {
+  .cards {
     max-width: 360px;
     flex-wrap: wrap;
     &__box {
@@ -47,10 +48,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
 
     &__title {
       max-width: 354px;
+      text-align: center;
     }
 
     &__text {
@@ -58,7 +61,10 @@
     }
   }
 }
+}
+
 @media (min-width: 479.9px) and (max-width: 767.9px) {
+  .values {
   .cards {
     max-width: 480px;
     flex-wrap: wrap;
@@ -72,12 +78,14 @@
 
     &__title {
       max-width: 450px;
+      text-align: center;
     }
 
     &__text {
       max-width: 450px;
     }
   }
+}
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

@@ -61,12 +61,8 @@
         class="menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu">
-        <svg class="icon-mobile" 
-          width="24"
-          height="24"
-          viewBox="0 0 20 20"
-        ><use href="./images/icons.svg#mobile-menu"></use>
-        
+        <svg class="icon-mobile" width="24" height="24" viewBox="0 0 20 20">
+          <use href="./images/icons.svg#mobile-menu"></use>
         </svg>
       </button>
     </header>
@@ -244,7 +240,17 @@
           <h2 class="titles">nuestro equipo</h2>
           <ul class="list members">
             <li class="members__cards">
-              <img src="./images/image3.jpg" alt="" width="270" height="260" />
+              <img
+                src="./images/image3.jpg"
+                srcset="
+                  ./images/480/image3.jpg  480w,
+                  ./images/768/image3.jpg        768w,
+                  ./images/image3.jpg      1200w
+                "
+                sizes="(max-width: 480px) 100vw,
+            (max-width: 768px) 50vw,
+            1200px"
+                alt="Imagen" />
               <h3 class="members__names">Andrés Cubo</h3>
               <p class="members__work">Diseñador de Productos</p>
               <ul class="list socials">
@@ -279,7 +285,17 @@
               </ul>
             </li>
             <li class="members__cards">
-              <img src="./images/image4.jpg" alt="" width="270" height="260" />
+              <img
+                src="./images/image4.jpg"
+                srcset="
+                  ./images/480/image4.jpg  480w,
+                  ./images/768/image4.jpg        768w,
+                  ./images/image4.jpg      1200w
+                "
+                sizes="(max-width: 480px) 100vw,
+            (max-width: 768px) 50vw,
+            1200px"
+                alt="Imagen" />
               <div class="team-card">
                 <h3 class="members__names">Carla Palacios</h3>
                 <p class="members__work">Desarrolladora Frontend</p>
@@ -316,7 +332,17 @@
               </div>
             </li>
             <li class="members__cards">
-              <img src="./images/image5.jpg" alt="" width="270" height="260" />
+             <img
+                src="./images/image5.jpg"
+                srcset="
+                  ./images/480/image5.jpg  480w,
+                  ./images/768/image5.jpg        768w,
+                  ./images/image5.jpg     1200w
+                "
+                sizes="(max-width: 480px) 100vw,
+            (max-width: 768px) 50vw,
+            1200px"
+                alt="Imagen" />
               <div class="team-card">
                 <h3 class="members__names">Mario Dorado</h3>
                 <p class="members__work">Marketing</p>
@@ -353,7 +379,17 @@
               </div>
             </li>
             <li class="members__cards">
-              <img src="./images/image6.jpg" alt="" width="270" height="260" />
+              <img
+                src="./images/image6.jpg"
+                srcset="
+                  ./images/480/image6.jpg  480w,
+                  ./images/768/image6.jpg        768w,
+                  ./images/image6.jpg     1200w
+                "
+                sizes="(max-width: 480px) 100vw,
+            (max-width: 768px) 50vw,
+            1200px"
+                alt="Imagen" />
               <div class="team-card">
                 <h3 class="members__names">Pablo Mijangos</h3>
                 <p class="members__work">Diseñador IU</p>
@@ -523,11 +559,8 @@
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          viewBox="0 0 20 20"
-          width="24"
-          height="24">
-       <use href="./images/icons.svg#mobilexit-menu"></use>
+        <svg viewBox="0 0 20 20" width="24" height="24">
+          <use href="./images/icons.svg#mobilexit-menu"></use>
         </svg>
       </button>
       <ul class="mobile-menu">
@@ -536,41 +569,39 @@
         <li><a href="#" class="link">Contacts</a></li>
       </ul>
       <ul class="booking-mobile list">
-          <li>
-             <a class="booking__link-mobile " href="tel:+525555296000"
-              >
-              +52 55 5529 6000</a
-            >
-          </li>
-          <li>
-         <a class="booking__link-mobile booking__link-mobile-last" href="mailto:info@devstudio.com"
-              >
-              info@devstudio.com</a
-            >  
-          </li>
-        </ul>
-        <ul class="list socials--mobile">
-              <li>
-                <a class="social__links socials__links--mobile" href="#">
-              Instagram
-                </a>
-              </li>
-              <li>
-                <a class="social__links socials__links--mobile" href="#">
-                 Facebook
-                </a>
-              </li>
-              <li>
-                <a class="social__links socials__links--mobile" href="#">
-            Twitter
-                </a>
-              </li>
-              <li>
-                <a class="social__links socials__links--mobile" href="#">
-               LinkedIn
-                </a>
-              </li>
-            </ul>
+        <li>
+          <a class="booking__link-mobile" href="tel:+525555296000">
+            +52 55 5529 6000</a
+          >
+        </li>
+        <li>
+          <a
+            class="booking__link-mobile booking__link-mobile-last"
+            href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list socials--mobile">
+        <li>
+          <a class="social__links socials__links--mobile" href="#">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a class="social__links socials__links--mobile" href="#">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a class="social__links socials__links--mobile" href="#"> Twitter </a>
+        </li>
+        <li>
+          <a class="social__links socials__links--mobile" href="#">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
     </div>
     <script
       defer
