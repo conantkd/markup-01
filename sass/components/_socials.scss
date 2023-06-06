@@ -3,6 +3,16 @@
   gap: 10px;
   justify-content: center;
   padding-bottom: 20px;
+
+  &--mobile {
+    color:var(--blue-color1) ;
+    display: flex;
+     padding-top: 64px;
+     padding-left: 40px;
+     gap: 20px;
+     justify-content: space-between;
+     position: relative;
+  }
   
   &__links {
     align-items: center;
@@ -36,4 +46,16 @@
   &__links--gray:hover {
     background-color: var(--blue-color1);
   }
+
+  &__links--mobile {
+    color:var(--blue-color1) ;
+    border-right: 1px solid gray;
+  }
+
+  &__links--mobile:after {
+     content: "";
+    padding-left: 10px;
+  }
+
 }
+

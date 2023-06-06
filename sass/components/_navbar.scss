@@ -1,5 +1,9 @@
 .navbar{
   display: flex;
+
+  .logo {
+    align-self: flex-start;
+  }
   &__menu {
     display: flex;
     gap: 50px;
