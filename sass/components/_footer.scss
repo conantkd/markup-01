@@ -92,3 +92,49 @@
   }
   }
 }
+
+
+@media (min-width:768px) and (max-width: 1199.9px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      padding-top: 60px;
+    }
+
+    &__button {
+      display: inline;
+      margin: 10px 90px;
+    }
+
+    &__titles {
+    align-items: center;
+    text-align: center;
+    }
+
+     &__suscriber {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+   &__emailsender {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--grey-color1);
+    font-size: 16px;
+    width: 420px;
+    outline: none;
+    padding: 0px 0 16px 16px;
+  }
+  }
+}
+
