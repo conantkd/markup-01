@@ -2,17 +2,21 @@
   align-items: center;
   border-bottom: 1px solid #ececec;
   display: flex;
- 
+
   &__container {
-  display: flex;
-  justify-content: space-between;
-  
- }
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 768px ) {
- .header {
-  display: flex;
-  gap: 270px;}
+@media (min-width: 380px) and (max-width: 767.9px) {
+  .header {
+    display: flex;
+    position: relative;
+  &__container {
+    
+    width: unset;
+  }
 }
-  
+}
+

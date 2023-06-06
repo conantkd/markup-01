@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   display: flex;
 
   .logo {
@@ -11,19 +11,19 @@
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0;
-    }
-    &__link {
+  }
+  &__link {
     color: var(--black-color1);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.17em;
-    }
-    &__link--active {
+  }
+  &__link--active {
     color: var(--blue-color1);
     position: relative;
-    }
-    &__link--active::after {
+  }
+  &__link--active::after {
     background: #2196f3;
     border-radius: 2px;
     content: "";
@@ -33,15 +33,24 @@
     height: 4px;
     left: 0;
     top: 48px;
-    }
-    &__link:hover, &__link:focus {
-      color: var(--blue-color1);
-    }
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--blue-color1);
+  }
 }
 
 @media (max-width: 767.9px) {
   .navbar {
     &__menu {
-    display: none;
-  }}
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 380px) and (max-width: 767.9px) {
+  .logo {
+  position: absolute;
+  top: -20px;
+  left: 0;}
 }

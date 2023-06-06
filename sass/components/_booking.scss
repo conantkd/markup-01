@@ -9,6 +9,7 @@
       flex-wrap: wrap;
       gap: 20px;
       padding-top:20vh;
+      max-width: 360px;
     }
 
     
@@ -50,7 +51,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199.9px) {
   .booking {
     padding-top:21px;
     padding-bottom: 0px;
