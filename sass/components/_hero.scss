@@ -40,10 +40,19 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.9px) {
   .hero {
     &__header {
       font-size: 34px;
+    }
+  }
+}
+
+
+@media (min-width: 450px) and (max-width: 767.9px){
+  .hero {
+    &__header {
+      font-size: 24px;
     }
   }
 }

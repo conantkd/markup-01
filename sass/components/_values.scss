@@ -1,18 +1,22 @@
 .values {
+  justify-content: center;
   .cards {
     display: flex;
     gap: 30px;
     padding-top: 89px;
+    align-items: baseline;
+    
+
     &__box {
       background-color: var(--white-color2);
       border-radius: 4px;
-      padding: 100px;
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding: 25px 100px 25px 100px;
       margin-bottom: 30px;
     }
 
     &__title {
+      justify-content: center;
+      align-items: center;
       color: var(--black-color1);
       font-size: 14px;
       font-weight: 700;
@@ -34,43 +38,69 @@
     }
   }
 }
-
-
-@media (min-width: 481px) and (max-width: 1199px ){
-  .cards {
-  margin: auto 0;
+@media (max-width: 479.8px) {
+.cards {
+    max-width: 360px;
     flex-wrap: wrap;
-    justify-content: space-around;
-&__box {
-      max-width: 354px;
+    &__box {
+      width: 354px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &__title {
-     max-width: 354px;
+      max-width: 354px;
     }
 
     &__text {
-    max-width: 354px;
+      max-width: 354px;
+    }
+  }
+}
+@media (min-width: 479.9px) and (max-width: 767.9px) {
+  .cards {
+    max-width: 480px;
+    flex-wrap: wrap;
+    margin: auto;
+    &__box {
+      max-width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    &__title {
+      max-width: 450px;
+    }
+
+    &__text {
+      max-width: 450px;
     }
   }
 }
 
-@media (min-width: 360px) and (max-width: 480px ){
+@media (min-width: 767px) and (max-width: 1199px) {
+
   .cards {
-    align-items: center;
-  margin: auto 0;
+    max-width: 768px;
     flex-wrap: wrap;
-    justify-content: center ;
-&__box {
-      max-width: 450px;
+    margin: auto;
+    &__box {
+      align-items: center;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      width: 354px;
+
     }
 
     &__title {
-     max-width: 450px;
+      max-width: 354px;
     }
 
     &__text {
-    max-width: 450px;
+      max-width: 354px;
     }
   }
 }

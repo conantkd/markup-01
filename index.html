@@ -37,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        
+
         <ul class="booking list">
           <li>
             <a class="booking__link" href="mailto:info@devstudio.com"
@@ -57,6 +57,18 @@
           </li>
         </ul>
       </div>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="icon-mobile" 
+          width="24"
+          height="24"
+          viewBox="0 0 20 20"
+        ><use href="./images/icons.svg#mobile-menu"></use>
+        
+        </svg>
+      </button>
     </header>
     <main>
       <section class="backdrop is-hidden" data-modal>
@@ -129,14 +141,14 @@
         </form>
       </section>
       <section class="hero">
-          <div class="container">
-            <h1 class="hero__header">
-              soluciones eficaces para <br />su negocio
-            </h1>
-            <button class="hero__button" type="button" data-modal-open>
-              Solicite nuestro servicio
-            </button>
-          </div>
+        <div class="container">
+          <h1 class="hero__header">
+            soluciones eficaces para <br />su negocio
+          </h1>
+          <button class="hero__button" type="button" data-modal-open>
+            Solicite nuestro servicio
+          </button>
+        </div>
       </section>
       <section class="values">
         <div class="container">
@@ -443,13 +455,13 @@
             </li>
             <li>
               <a class="adress__links" href="mailto:info@example.com"
-              >info@example.com</a
+                >info@example.com</a
               >
             </li>
             <li>
               <a class="adress__links" href="tel:+525555296000"
                 >+52 55 5529 6000</a
-                >
+              >
             </li>
           </ul>
         </address>
@@ -490,7 +502,7 @@
         </ul>
         <div class="footer__suscriber">
           <strong class="footer__titles"
-          >SUSCRÍBASE AL BOLETÍN INFORMATIVO</strong
+            >SUSCRÍBASE AL BOLETÍN INFORMATIVO</strong
           >
           <form>
             <label hidden>SUSCRIBETE</label>
@@ -512,35 +524,25 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
-          fill="currentColor"
           viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
           width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+          height="24">
+       <use href="./images/icons.svg#mobilexit-menu"></use>
         </svg>
       </button>
-  
+
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li><a href="./index.html" class="link">Estudio</a></li>
+        <li><a href="./portafolio.html" class="link">Portafolio</a></li>
+        <li><a href="#" class="link">Contacts</a></li>
       </ul>
     </div>
-     <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./modal.js"></script>
+      crossorigin="anonymous"></script>
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
-  </html>
-  
+</html>

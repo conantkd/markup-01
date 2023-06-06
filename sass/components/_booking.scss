@@ -1,7 +1,7 @@
 .booking {
     display: flex;
     gap: 30px;
-    padding:32px 0px 32px auto;
+    padding:32px 0px 32px 270px;
     flex-wrap: nowrap;
   
     &__link {
@@ -26,9 +26,10 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px ) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .booking {
     padding-top:21px;
+    padding-bottom: 0px;
     padding-left: 50px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -38,7 +39,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 767.9px) {
   .booking {
     display: none;
   }
