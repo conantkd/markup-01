@@ -30,16 +30,7 @@
 
 @media screen and (max-width: 1199px) {
     .services{
-        &__list {
-    flex-wrap: wrap;
-
-    &__description {
-     padding: 10px 0px 10px 0px;
-    width: 200px;
-
- 
+     display: none;
     }
-}
-}
 }
 

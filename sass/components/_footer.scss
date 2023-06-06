@@ -54,11 +54,15 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width:480px) and (max-width: 767.9px) {
   .footer {
     &__container {
-      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
+      text-align: center;
+      padding: 0;
+      padding-top: 60px;
     }
 
     &__button {
@@ -73,6 +77,7 @@
      &__suscriber {
     align-items: center;
     text-align: center;
+    padding-left: 0;
   }
 
    &__emailsender {
@@ -81,10 +86,9 @@
     border-radius: 4px;
     color: var(--grey-color1);
     font-size: 16px;
-    width: 340px;
+    width: 420px;
     outline: none;
-    padding: 16px 0 16px 16px;
+    padding: 0px 0 16px 16px;
   }
-
   }
 }
