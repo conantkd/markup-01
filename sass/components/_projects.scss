@@ -10,7 +10,6 @@
 
     &__cards {
     border: 1px solid #eeeeee;
-    width: 370px;
     }
 
     &__cards:hover {
@@ -72,13 +71,18 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
    .projects {
      &__list {
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin: 0 auto;
+
+    &__cards {
+    width: unset;
+    }
     }
   }
 }
+
