@@ -105,9 +105,9 @@ a {
   margin: 0 auto;
 }}
 
-@media screen and (min-width:450px) and (max-width: 767.9px) {
+@media screen and (min-width:420px) and (max-width: 767.9px) {
     .container--tablet {
-  width:  480px;
+  max-width:  480px;
   margin: 0 auto;
 }}
 
