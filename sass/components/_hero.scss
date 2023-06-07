@@ -56,3 +56,8 @@
     }
   }
 }
+
+@media screen and (min-device-pixel-ratio:2),screen and (min-resolution:192dpi),screen and (min-resolution:2ppx) {
+  .hero {
+    background-image: url("../images/imageoverlay-hero.png"),
+    url("../images/image-hero-sec@2x.jpg");}}

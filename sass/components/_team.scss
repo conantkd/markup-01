@@ -1,74 +1,52 @@
-.team{
+.team {
   background-color: var(--white-color2);
   padding-top: 94px;
   margin-top: 60px;
-    .members {
+  .members {
     display: flex;
     gap: 30px;
     padding-bottom: 89px;
     padding-top: 50px;
-        &__cards {
-        background-color: var(--white-color1);
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-        }
-       
-        &__names {
-        color: var(--black-color1);
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.03em;
-        line-height: 1.18em;
-        padding-top: 30px;
-        padding-bottom: 10px;
-        text-transform: capitalize;
-        text-align: center;
-        }
-        &__work {
-        color: var(--grey-color1);
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        line-height: 1.18em;
-        padding-bottom: 16px;
-        text-transform: capitalize;
-        text-align: center;
-        }
+    &__cards {
+      background-color: var(--white-color1);
+      border-radius: 0px 0px 4px 4px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
-}
 
-
-@media screen and (max-width: 1199px) {
-  .team{
-  .members {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  }
-}
-
-@media screen (min-width:360) and (max-width: 767.9) {
-  .team{
-  .members {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-basis: 50%
-    justify-content: center;
-  }
-  }
-}
-
-@media screen (min-width:768) and (max-width: 1199.9px) {
-  .members {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-basis: 50%
-    justify-content: center;
-
+    &__names {
+      color: var(--black-color1);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      line-height: 1.18em;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    &__work {
+      color: var(--grey-color1);
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: 1.18em;
+      padding-bottom: 16px;
+      text-transform: capitalize;
+      text-align: center;
+    }
   }
 }
+
+@media (max-width: 1199px) {
+  .team {
+    .members {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 50%;
+    }
+  }
+}
+
