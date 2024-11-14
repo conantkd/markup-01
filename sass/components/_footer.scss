@@ -2,7 +2,6 @@
   background-color: var(--black-color2);
 
   &__container {
-    display: flex;
     flex: 1;
     gap: 45px;
     padding: 60px 0px 60px;
@@ -54,7 +53,7 @@
   }
 }
 
-@media (min-width:400px) and (max-width: 767.9px) {
+@media (min-width:200px) and (max-width: 767.9px) {
   .footer {
     &__container {
       display: flex;
@@ -63,7 +62,7 @@
       text-align: center;
       padding: 0;
       padding-top: 60px;
-      width: 450px;
+      width: 70vw;
     }
 
     &__button {
@@ -87,7 +86,7 @@
     border-radius: 4px;
     color: var(--grey-color1);
     font-size: 16px;
-    width: 380px;
+    width: 70vw;
     outline: none;
     padding: 16px 0 16px 16px;
   }
@@ -138,4 +137,5 @@
   }
   }
 }
+
 
